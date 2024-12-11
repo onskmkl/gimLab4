@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сам удома - Лабораторна робота 4</title>
+
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+    <!-- Іконка сайту -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Підключення соціальних іконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Підключення шрифтів -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="#">Сам Удома</a>
+        <ul>
+            <li><a href="#story-section">Сюжет</a></li>
+            <li><a href="#map-section">Локації</a></li>
+            <li><a href="#video-section">Відео</a></li>
+            <li><a href="#audio-section">Аудіо</a></li>
+            <li><a href="#social-section">Соціальні мережі</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Ласкаво просимо на сторінку фільму "Сам удома"</h1>
+            <p>Дізнайтесь більше про культову різдвяну стрічку, її локації, акторів та атмосферу свята.</p>
+        </div>
+    </header>
+    
+    <main>
+        <section id="story-section" class="story">
+            <h2>Про фільм</h2>
+            <h3>Сюжет</h3>
+            <p>Фільм "Сам удома" розповідає історію 8-річного хлопчика Кевіна МакКалістера, якого випадково залишають вдома самого на Різдво. Поки його сім'я відпочиває у Парижі, Кевіну доводиться самостійно захищати свій будинок від двох невдалих грабіжників. Завдяки кмітливості, винахідливим пасткам та незламному духу Кевін перетворює звичайний передмістовий будинок у фортецю, а свою історію – у незабутню різдвяну класику.</p>
+        </section>
+
+        <section id="map-section">
+            <h2>Карта місцевості</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2929.2773415836027!2d-87.73356396738636!3d42.10977312418083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc4f69a151b2d%3A0xe1bacb40e609a6bc!2zNjcxIExpbmNvbG4gQXZlLCBXaW5uZXRrYSwgSUwgNjAwOTMsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1733885850332!5m2!1suk!2sua" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <h2>Локація будинку з фільму "Сам Удома"</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1733886170893!6m8!1m7!1su7oIp8cJ9YyOx37qKJqfQQ!2m2!1d42.10886023269268!2d-87.73311050896956!3f332.1714805044576!4f5.117683187564737!5f0.4000000000000002" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Відео про фільм "Сам Удома"</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dy7W46acOmk?si=ueAq7K7UCPjGCEmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="audio-section">
+            <h2>Аудіо "Carol of the Bells"</h2>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="audio/sample.mp3" type="audio/mpeg">
+                    Ваш браузер не підтримує аудіо.
+                </audio>
+            </div>
+        </section>
+
+        <section class="actors-section">
+            <h2>Головні актори</h2>
+            <div class="actors-container">
+                <div class="actor-card">
+                    <img src="https://images.kinorium.com/movie/cast/91247/w150_346.jpg?1610276975" alt="Моколей Калкін">
+                    <h4>Маколей Калкін (Кевін МакКалістер)</h4>
+                    <p>Головний герой фільму, 8-річний хлопчик, який залишився сам удома і створив геніальні пастки для грабіжників.</p>
+                </div>
+                <div class="actor-card">
+                    <img src="https://images.kinorium.com/movie/cast/91247/w150_582.jpg?1610276975" alt="Джо Пеші">
+                    <h4>Джо Пеші (Гаррі Лайм)</h4>
+                    <p>Один із двох грабіжників, який прагне обікрасти будинок сім'ї МакКалістерів, але наштовхується на винахідливість Кевіна.</p>
+                </div>
+                <div class="actor-card">
+                    <img src="https://images.kinorium.com/movie/cast/91247/w150_620180.jpg?1610276975" alt="Деніел Стерн">
+                    <h4>Деніел Стерн (Марв Мерчантс)</h4>
+                    <p>Другий грабіжник, незграбний помічник Гаррі, часто потрапляє у найсмішніші ситуації через пастки Кевіна.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="social-section">
+            <h2>Соціальні мережі Маколея Калкіна</h2>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/OfficialMacaulayCulkin" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://twitter.com/IncredibleCulk" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/culkamania/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Лабораторна робота №4. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
